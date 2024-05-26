@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(0, 0, 0);
+            color: white; /* Altera a cor do texto para branco */
+        }
+        
+        #container-imagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 50vh; /* Ajusta a altura para 50% da altura da viewport */
+            width: 100vw;
+            padding: 2%;
+        }
+
+        #container-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; /* Ajusta a altura para 50% da altura da viewport */
+            width: 100vw;
+            padding: 2%;
+        }
+    </style>
     <title>Enchentes</title>
 </head>
 <body>
-    <input type="password" name="senha"> 
+    <div id="container-imagem">
+        <img style="max-width: 100%; height: auto;" src="https://imgs.search.brave.com/06MNorNq2JQpvmipWazEwpOEoa7uZbWZGcRCtSgJvRA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ncnVw/b2Fob3JhLm5ldC5i/ci93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wNS8zMzEyYmFm/MC02NjNhLTRmZWUt/YmRhMS05MDc0YTg0/M2IwYmQtMS04NTF4/MTIwMC5qcGc" alt="img_alerta">
+    </div>
+    <div id="container-form">
+        <form method="get">
+            <label for="fname">Diga sua localidade:</label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <label for="lname">Diga quantas pessoas estão com você:</label><br>
+            <input type="text" id="lname" name="lname" ><br>
+            <label for="lname">Há alguma pessoa com você que precise de cuidados especiais?:</label><br>
+            <input type="text" id="espec" name="lname" >
+        </form>
+    </div>
 </body>
 </html>
